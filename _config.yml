@@ -1,0 +1,17 @@
+# ==========================================================
+#  STUDENT: EDIT ONLY THE THREE LINES MARKED "CHANGE ME"
+#  Keep the quotation marks. Do not change anything else.
+# ==========================================================
+title: "Your Name | Cybersecurity Playbook"        # CHANGE ME: LastName FirstName | Cybersecurity Playbook
+student_name: "Your Name"                            # CHANGE ME: your name as you want employers to see it
+contact_email: "your.email@example.com"              # CHANGE ME: professional email (no personal phone or address)
+
+# --- Program settings (do not change) ---
+program: "AAS Cybersecurity & Network Systems"
+college: "Hocking College"
+description: "Cybersecurity Playbook & Professional Portfolio"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

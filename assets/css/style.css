@@ -1,0 +1,35 @@
+/* Hocking College program style: green #009E49, gold #FCA311, blue #0084C9 */
+:root{--green:#009E49;--gold:#FCA311;--blue:#0084C9;--ink:#222;--muted:#5A5A5A;--band:#F2F2F2;--line:#d9d9d9}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6;color:var(--ink);background:#fff}
+h1,h2,h3,.site-name,.kicker,nav,th,.side-title{font-family:Arial,Helvetica,sans-serif}
+a{color:var(--blue)} a:hover{color:var(--green)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:6px;z-index:9}
+.site-header{border-bottom:4px solid var(--gold);padding:28px 0 18px;text-align:center}
+.kicker{margin:0;color:var(--green);font-weight:bold;text-transform:uppercase;font-size:13px;letter-spacing:.06em}
+.site-name{margin:4px 0;font-size:34px;font-weight:bold}.site-name a{color:var(--ink);text-decoration:none}
+.tagline{margin:0;color:var(--blue);font-style:italic}
+.site-nav{background:var(--green)}
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+.site-nav a{display:block;padding:12px 14px;color:#fff;text-decoration:none;font-weight:bold;font-size:15px}
+.site-nav a:hover,.site-nav a:focus{background:#007d3a}
+.layout{display:flex;gap:32px;padding-top:24px;padding-bottom:40px}
+.content{flex:1;min-width:0}
+.side{width:230px;flex-shrink:0;border-left:4px solid var(--gold);padding-left:14px}
+.side-title{font-weight:bold;color:var(--green);margin-top:0}
+.side ul{list-style:none;padding:0;margin:0}.side li{margin:6px 0}
+h1{color:var(--green);border-bottom:2px solid var(--green);padding-bottom:6px}
+h2{color:var(--green);margin-top:32px}
+h3{color:var(--ink)}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
+th{background:var(--green);color:#fff;text-align:left;padding:8px;border:1px solid #333}
+td{padding:8px;border:1px solid #333;vertical-align:top}
+tr:nth-child(even) td{background:var(--band)}
+blockquote{margin:16px 0;padding:8px 16px;border-left:4px solid var(--gold);background:#fffaf0;font-style:italic}
+code{background:var(--band);padding:1px 5px;border-radius:3px}
+img{max-width:100%;height:auto;border:1px solid var(--line)}
+.artifact{border:1px solid var(--line);border-top:4px solid var(--green);padding:4px 18px 12px;margin:24px 0}
+.site-footer{border-top:4px solid var(--gold);padding:18px 0;text-align:center;color:var(--muted)}
+.small{font-size:14px}
+@media (max-width:760px){.layout{flex-direction:column}.side{width:auto;border-left:0;border-top:4px solid var(--gold);padding:10px 0 0}}

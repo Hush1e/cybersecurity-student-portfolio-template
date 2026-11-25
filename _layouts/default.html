@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="kicker">{{ site.college }} &middot; {{ site.program }}</p>
+      <p class="site-name"><a href="{{ '/' | relative_url }}">{{ site.student_name }}</a></p>
+      <p class="tagline">{{ site.description }}</p>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="wrap">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/instructions/' | relative_url }}">Instructions</a></li>
+        <li><a href="{{ '/playbook/' | relative_url }}">Cybersecurity Playbook</a></li>
+        <li><a href="{{ '/ai-emerging-technology/' | relative_url }}">AI &amp; Emerging Technology</a></li>
+        <li><a href="{{ '/certifications-credentials/' | relative_url }}">Certifications &amp; Credentials</a></li>
+        <li><a href="{{ '/professional-portfolio/' | relative_url }}">Professional Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="wrap layout">
+    {% if page.url contains '/playbook/' %}
+    <aside class="side" aria-label="Playbook knowledge areas">
+      <p class="side-title">Knowledge Areas</p>
+      <ul>
+        <li><a href="{{ '/playbook/component-security/' | relative_url }}">🧩 Component Security</a></li>
+        <li><a href="{{ '/playbook/connection-security/' | relative_url }}">🌐 Connection Security</a></li>
+        <li><a href="{{ '/playbook/data-security/' | relative_url }}">🔐 Data Security</a></li>
+        <li><a href="{{ '/playbook/human-security/' | relative_url }}">👤 Human Security</a></li>
+        <li><a href="{{ '/playbook/organizational-security/' | relative_url }}">🏢 Organizational Security</a></li>
+        <li><a href="{{ '/playbook/societal-security/' | relative_url }}">⚖️ Societal Security</a></li>
+        <li><a href="{{ '/playbook/software-security/' | relative_url }}">💻 Software Security</a></li>
+        <li><a href="{{ '/playbook/system-security/' | relative_url }}">🖥️ System Security</a></li>
+      </ul>
+    </aside>
+    {% endif %}
+    <main id="main" class="content">
+      {{ content }}
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Get in touch at <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      <p class="small">{{ site.student_name }} &middot; {{ site.program }} &middot; {{ site.college }}</p>
+    </div>
+  </footer>
+</body>
+</html>
