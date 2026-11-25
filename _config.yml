@@ -1,6 +1,6 @@
 # ==========================================================
-#  STUDENT: EDIT ONLY THE THREE LINES MARKED "CHANGE ME"
-#  Keep the quotation marks. Do not change anything else.
+#  STUDENT: EDIT THE LINES MARKED "CHANGE ME"
+#  Keep the quotation marks. See README.md for site setup.
 # ==========================================================
 title: "Your Name | Cybersecurity Playbook"        # CHANGE ME: LastName FirstName | Cybersecurity Playbook
 student_name: "Your Name"                            # CHANGE ME: your name as you want employers to see it
@@ -10,7 +10,7 @@ contact_email: "your.email@example.com"              # CHANGE ME: professional e
 program: "AAS Cybersecurity & Network Systems"
 college: "Hocking College"
 description: "Cybersecurity Playbook & Professional Portfolio"
-baseurl: ""
+baseurl: "/cybersecurity-student-portfolio-template" # CHANGE ME: use "" for yourusername.github.io; otherwise "/your-repository-name"
 markdown: kramdown
 permalink: pretty
 exclude:
