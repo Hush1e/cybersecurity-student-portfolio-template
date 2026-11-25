@@ -33,7 +33,7 @@ These instructions walk you through setting up and maintaining your Cybersecurit
 ### Step 4. Personalize your site
 
 1. In your repository, select the file **_config.yml**, then the **pencil icon** (Edit).
-2. Change only the three lines marked **CHANGE ME**. Keep the quotation marks.
+2. Update the four **CHANGE ME** settings: `title`, `student_name`, `contact_email`, and `baseurl`. Keep the quotation marks. For your `yourusername.github.io` repository, set `baseurl: ""`. If you use a different repository name, use `baseurl: "/your-repository-name"`. The master template uses its own demo path, which must be changed in your copy.
 3. Select **Commit changes**, then **Commit changes** again.
 4. Open **index.md**, select the pencil icon, and replace every item in **[square brackets]** on your Home page.
 5. To add your photo: open the **images** folder, select **Add file → Upload files**, upload your photo, and commit. Then change `avatar-placeholder.png` in index.md to your photo's file name.
