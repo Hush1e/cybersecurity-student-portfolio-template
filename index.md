@@ -9,7 +9,7 @@ title: Home
 
 # [Student Name]
 
-![Professional photo or avatar of [Student Name]](images/avatar-placeholder.png)
+![Professional photo or avatar of [Student Name]]({{ '/images/avatar-placeholder.png' | relative_url }})
 
 **Program:** AAS Cybersecurity & Network Systems  
 **College:** Hocking College  
